@@ -16,3 +16,11 @@ class Funcionario(PessoaFisica):
 
     def __str__(self):
         return "FUNCIONÁRIO: "+super().nome+" | CPF: "+super().cpf+" | Cargo: "+self.__cargo+" | Horário: "+self.__horario
+
+
+    def acessarEscola(self, codigo_acesso):
+        if (codigo_acesso == self.__cgm):
+            print("Bom trabalho, ", super().nome)
+            return True
+        else:
+            return False

@@ -1,14 +1,14 @@
 from pessoa_fisica import PessoaFisica
 
 class Aluno(PessoaFisica):
-    def __init__(self, nome, cpf, turma, turno):
+    def __init__(self, nome, cpf, cgm, turno):
         super().__init__(nome, cpf)
-        self.__turma = turma
+        self.__cgm = cgm
         self.__turno = turno
 
     @property
-    def turma(self):
-        return self.__turma
+    def cgm(self):
+        return self.__cgm
 
     @property
     def turno(self):
@@ -16,4 +16,11 @@ class Aluno(PessoaFisica):
 
     def __str__(self):
         return "ALUNO: "+super().nome+" | CPF: "+super().cpf+\
-               " | Turma: "+self.__turma+" | Turno: "+self.__turno
+               " | CGM: "+self.__cgm+" | Turno: "+self.__turno
+
+    def acessarEscola(self, codigo_acesso):
+        if(codigo_acesso == self.__cgm):
+            print("Bem vindo aluno(a), ", super().nome)
+            return True
+        else :
+            return False
