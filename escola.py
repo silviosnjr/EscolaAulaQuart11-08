@@ -4,7 +4,7 @@ from funcionario import Funcionario
 
 class Escola():
     def __init__(self):
-        self.__nome = "Escola Estadual dos Programadores do Futuro"
+        self.__nome = "PythonOO-ExemploESCOLA-QUARTA Estadual dos Programadores do Futuro"
 
         aluno1 = Aluno("Ciclano de Tal", "111.222.333-44", "222-333-44", "noite")
         aluno2 = Aluno("Maria de Souza", "333.222.333-44", "000-333-44", "tarde")
