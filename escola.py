@@ -21,6 +21,7 @@ class Escola():
 
     def solicitarAcesso(self):
         codigo_acesso = input("Qual o seu código de acesso: ")
+        #exemplo da presença de polimorfismo com o for
         for pessoa in self.__pessoas:
             if (pessoa.acessarEscola(codigo_acesso)):
                 return True
